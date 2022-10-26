@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            
+            // 1단계 기본은 0 ~ 1 미만의 난수를 발생
+            ran1 = Math.random();
+    
+            document.write(ran1+"<br>");
+            
+            // 2단계 10을 곱해서 소수점 하나 아래 자리를 위로 올리고
+            ran2 = ran1 * 100;
+    
+            document.write(ran2+"<br>");
+        
+            // 3단계  Math,floor 매서드는 소수점 1번째 자리를 버림하여 정수를 리턴한다
+            ran3 = Math.floor(ran2);
+    
+            document.write(ran3+"<br>");
+
+        </script>
+    </body>
+</html>

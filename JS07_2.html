@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            // 단 입력 및 곱해지는 i값 초기화
+
+            a = prompt("원하는 단을 입력하세요");
+            i=0;
+
+             // 1~9단까지만 가능하게 입력값을 제한하는 조건문
+
+/*            if(a>9){
+                a = prompt("숫자가 너무 큽니다 원하는 단을 입력하세요");
+            }else if(a<1){
+                a = prompt("잘못된 값입니다 다시 입력하세요")
+            }
+*/
+            //do while 로
+
+        do{
+            a = prompt("잘못된 값입니다 다시 입력하세요")
+
+        }while(a>9 || a<2)
+
+            // 올바른 입력값이 왔을 경우 구구단 연산
+
+        do{
+            i++;
+            document.write(a+" * "+i+" = "+a*i+"<br>"); 
+
+        }while(i<9)
+
+        </script>
+    </body>
+</html>

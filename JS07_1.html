@@ -1,0 +1,32 @@
+<html lang="en">
+</head>
+<body>
+    <h2>20고개 게임을 시작합니다. </h2>
+
+    <button onclick="game()">게임 시작</button>
+
+<script>
+function game() {
+
+    var answer = Math.floor(Math.random() * 100);
+    var no = 0;
+    var count = 0;
+    while(answer != no) {
+        var no = prompt("숫자를 입력하세요");
+
+        if(no > answer) {
+            alert("더 작은 수를 입력하세요 !!!")
+        }else {
+            alert("더 큰 수를 입력하세요 !!!")
+        }
+        count++;
+    }
+
+    document.write(count + "번 만에 성공하였습니다. ");
+}
+
+</script>
+    
+
+</body>
+</html>
