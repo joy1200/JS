@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+
+            var num1 = 123;
+
+            if(isNaN(num1)){
+                document.write("num 문자를 기억합니다");
+            }else{
+                document.write("num 숫자를 기억합니다<br>");
+            }
+
+            var num2 = "2";
+            document.write("num2+1 = " + (parseInt(num2)+1)+"<br>");
+
+            var num3 = "3.5";
+            document.write("num3+1 = " + (parseFloat(num3)+1)+"<br>");
+
+            var num4 = "3+3+3";
+            document.write(num4+"<br>");
+            document.write(eval(num4));
+
+        </script>
+    </body>
+</html>
